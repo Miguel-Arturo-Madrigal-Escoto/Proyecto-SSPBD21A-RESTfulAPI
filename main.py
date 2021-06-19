@@ -72,7 +72,7 @@ if __name__ == '__main__':
     @app.route("/api/v1/sesiones", methods=["POST"])
     def sesion():
         if request.method == "POST" and request.is_json:
-            try:git status
+            try:
                 data = request.get_json()
                 correo = data['correo']
                 contrasena = data['contrasena']
